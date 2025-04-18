@@ -44,7 +44,6 @@
 		- Use Vuex store for state management
 		- Use Quasar components for responsive design
 
-## Entity Relationship
 ## Entity Relationships
 
 | Entity       | Relationships                                                                 |
