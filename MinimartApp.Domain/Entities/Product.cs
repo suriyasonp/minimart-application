@@ -10,5 +10,9 @@ namespace MinimartApp.Domain.Entities
         public string? Description { get; set; }
         public decimal Price { get; set; } = 0.0m;
         public string Category { get; set; } = null!;
+        public bool IsActive { get; set; } = true;
+
+        public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;
+        public DateTimeOffset? UpdatedAt { get; set; } = null;
     }
 }
