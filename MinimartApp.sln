@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimartApp.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimartApp.Infrastructure", "MinimartApp.Infrastructure\MinimartApp.Infrastructure.csproj", "{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimartApp.API", "MinimartApp.API\MinimartApp.API.csproj", "{025CBA8C-C7F5-4137-9253-353C7AB6851C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -63,18 +61,6 @@ Global
 		{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}.Release|x64.Build.0 = Release|Any CPU
 		{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}.Release|x86.ActiveCfg = Release|Any CPU
 		{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}.Release|x86.Build.0 = Release|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Debug|x64.Build.0 = Debug|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Debug|x86.Build.0 = Debug|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Release|x64.ActiveCfg = Release|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Release|x64.Build.0 = Release|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Release|x86.ActiveCfg = Release|Any CPU
-		{025CBA8C-C7F5-4137-9253-353C7AB6851C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
