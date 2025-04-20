@@ -22,7 +22,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\MinimartApp.Application\MinimartApp.Application.csproj" />
 	  <ProjectReference Include="..\MinimartApp.Domain\MinimartApp.Domain.csproj" />
+	  <ProjectReference Include="..\MinimartApp.Infrastructure\MinimartApp.Infrastructure.csproj" />
 	</ItemGroup>
 
 </Project>
