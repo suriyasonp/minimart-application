@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimartApp.Api", "MinimartApp.Api\MinimartApp.Api.csproj", "{E724D3D6-F2EA-48CE-9011-5D713C03C072}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,18 @@ Global
 		{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}.Release|x64.Build.0 = Release|Any CPU
 		{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}.Release|x86.ActiveCfg = Release|Any CPU
 		{C0345236-F8D4-46A2-AFAC-A6CF06C48A36}.Release|x86.Build.0 = Release|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Debug|x64.Build.0 = Debug|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Debug|x86.Build.0 = Debug|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Release|x64.ActiveCfg = Release|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Release|x64.Build.0 = Release|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Release|x86.ActiveCfg = Release|Any CPU
+		{E724D3D6-F2EA-48CE-9011-5D713C03C072}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
