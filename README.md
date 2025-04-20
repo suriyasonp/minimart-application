@@ -54,3 +54,47 @@
 | UserRole     | Many-to-One with User (UserId as foreign key), RoleType as Enum             |
 | RoleType     | Enum used in UserRole to define roles (e.g., Admin, Cashier)                |
 
+## Database Migrations
+
+To manage database schema changes, follow these steps:
+
+### 1. Add a Migration
+To create a new migration, run the following command in the terminal: `dotnet ef migrations add <MigrationName>`
+Replace `<MigrationName>` with a descriptive name for the migration, such as `AddProductTable` or `UpdateInventorySchema`.
+
+Example: `dotnet ef migrations add AddInitialTables`
+This will generate a migration file in the `MinimartApp.Infrastructure/Migrations` folder.
+
+---
+
+### 2. Update the Database
+To apply the migration and update the database schema, run: ` dotnet ef database update --project MinimartApp.Infrastructure --startup-project MinimartApp.Api`
+
+This will apply all pending migrations to the database.
+
+---
+
+### 3. Verify the Changes
+- Check your PostgreSQL database to ensure the schema changes have been applied.
+- Use tools like `pgAdmin` or `DBeaver` to inspect the database.
+
+---
+
+### 4. Rollback a Migration (Optional)
+If you need to revert a migration, use the following command: `dotnet ef database update <PreviousMigrationName>`
+
+Replace `<PreviousMigrationName>` with the name of the migration you want to roll back to.
+
+---
+
+### 5. Remove a Migration (Optional)
+If you created a migration by mistake and haven’t applied it yet, you can remove it using: `dotnet ef migrations remove`
+
+
+---
+
+### Notes
+- Ensure the `dotnet-ef` tool is installed globally. If not, install it using: `dotnet tool install --global dotnet-ef`
+- Verify that the connection string in `appsettings.json` is correctly configured: `"Host=localhost;Port=5432;Database=minimartdb;Username=yourusername;Password=yourpassword"`
+- If your `DbContext` is in a different project (e.g., `MinimartApp.Infrastructure`), specify the startup project: `dotnet ef migrations add <MigrationName> --startup-project ../MinimartApp.Api dotnet ef database update --startup-project ../MinimartApp.Api`
+---
