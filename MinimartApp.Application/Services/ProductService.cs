@@ -59,12 +59,26 @@ namespace MinimartApp.Application.Services
         }
         public async Task<ProductResponseDto> UpdateProductAsync(Guid id, ProductUpdateDto productUpdateDto)
         {
-             
-            
+            var product = await productRepository.GetByIdAsync(id) ?? throw new KeyNotFoundException($"Product with ID {id} not found.");
+            product.Name = productUpdateDto.Name;
+            product.Price = productUpdateDto.Price;
+            product.Category = productUpdateDto.Category;
+            product.UpdatedAt = DateTimeOffset.UtcNow;
+            await productRepository.UpdateAsync(product);
+            return new ProductResponseDto
+            {
+                Id = product.Id,
+                Name = product.Name,
+                Price = product.Price,
+                Category = product.Category,
+                CreatedAt = DateTimeOffset.UtcNow,
+                UpdatedAt = product.UpdatedAt
+            };
         }
         public async Task DeleteProductAsync(Guid id)
         {
-            await productRepository.DeleteAsync(id);
+            var product = await productRepository.GetByIdAsync(id) ?? throw new KeyNotFoundException($"Product with ID {id} not found.");
+            await productRepository.DeleteAsync(product.Id);
         }
     }
 }
