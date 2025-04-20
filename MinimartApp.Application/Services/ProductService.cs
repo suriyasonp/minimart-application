@@ -41,6 +41,7 @@ namespace MinimartApp.Application.Services
             {
                 Id = Guid.NewGuid(),
                 Name = productCreateDto.Name,
+                Description = productCreateDto.Description,
                 Price = productCreateDto.Price,
                 Category = productCreateDto.Category,
                 CreatedAt = DateTimeOffset.UtcNow
@@ -51,6 +52,7 @@ namespace MinimartApp.Application.Services
             {
                 Id = product.Id,
                 Name = product.Name,
+                Description = product.Description,
                 Price = product.Price,
                 Category = product.Category,
                 CreatedAt = DateTimeOffset.UtcNow,
