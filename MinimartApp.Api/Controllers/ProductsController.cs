@@ -1,9 +1,6 @@
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using MinimartApp.Application.DTOs;
-using MinimartApp.Application.Interfaces;
 using MinimartApp.Application.Services;
-using MinimartApp.Domain.Entities;
 
 namespace MinimartApp.Api.Controllers
 {
@@ -17,7 +14,7 @@ namespace MinimartApp.Api.Controllers
             var products = await productService.GetAllProductsAsync();
             return Ok(products);
         }
-
+       
         [HttpGet("{id:guid}", Name = "GetProductById")]
         public async Task<IActionResult> GetById(Guid id)
         {
